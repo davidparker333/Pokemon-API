@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>PokeAPI Example</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <h1>PokeAPI Data</h1>
+            </div>
+        </div>
+        <div class="row my-4">
+            <form action="" class="searchForm">
+                <label for="pokeSearch" class="form-label">Enter a Pokemon:</label>
+                <input type="text" class="form-control" id="pokeSearch" name="pokeSearch">
+                <button onclick="loadData()" class="btn btn-outline-primary my-2">Search</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-4 sprite-col">
+                <h2>Sprite:</h2>
+                <div class="sprite-div poke"></div>
+            </div>
+            <div class="col-4 info-col">
+                <h2>Info: </h2>
+                <ul class="list-group info-group poke">
+                    <!-- Info here -->
+                  </ul>
+            </div>
+            <div class="col-4 moves-col">
+                <h2>Moves: </h2>
+                <ul class="list-group moves-group poke">
+                    <!-- Moves here -->
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
